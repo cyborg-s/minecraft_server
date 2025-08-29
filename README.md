@@ -6,4 +6,4 @@ minecraft-docker/
 ├─ .env
 ├─ server.properties
 └─ data/
-   └─ server.jar   (deine Minecraft JAR hier reinlegen)
+   └─ server.jar
