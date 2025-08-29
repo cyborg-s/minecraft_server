@@ -1,0 +1,9 @@
+# Minecraft server properties
+server-port=25565
+motd=Welcome to My Java 21 Dockerized Minecraft Server!
+max-players=20
+online-mode=true
+enable-command-block=false
+view-distance=10
+white-list=false
+level-seed=69420018030897796
