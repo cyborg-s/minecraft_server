@@ -1,11 +1,5 @@
 #!/bin/sh
 
-# EULA enforce
-if [ "${EULA}" != "TRUE" ]; then
-  echo "ERROR: You must accept the EULA by setting EULA=TRUE in .env"
-  exit 1
-fi
-echo "eula=true" > /data/eula.txt
 
 # Check server.jar
 if [ ! -f /data/server.jar ]; then
@@ -22,9 +16,15 @@ fi
 : "${WHITE_LIST:=false}"
 : "${LEVEL_SEED:=}"
 
+
+export MOTD
+export MAX_PLAYERS
+export WHITE_LIST
+export LEVEL_SEED
+
 # generate the server.properties
 if [ -f /server.properties.temp ]; then
-  envsubst < /server.properties.temp > /data/server.properties
+  envsubst < /app/server.properties.temp > /app/server.properties
   echo "Generated server.properties with defaults (if not provided in .env)."
 fi
 
