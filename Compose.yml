@@ -3,10 +3,8 @@ services:
     build: .
     container_name: minecraft-server
     ports:
-      - "8888:25565"   # außen Port 8888, innen Minecraft-Port 25565
-    environment:
-      EULA: "TRUE"
-      JVM_OPTS: "-Xms2G -Xmx2G"
+      - "8888:25565"
     volumes:
       - ./data:/data
-    restart: unless-stopped
+    restart: on-failure
+    env_file: .env
