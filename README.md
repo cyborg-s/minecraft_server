@@ -67,7 +67,7 @@ This section gives brief and minimal instructions on how to use the setup. more 
    docker compose up --build -d
    ```
     >[!NOTE]
-    > Under windows you have to make sure that the file format from Compose, Dockerfile and entrypoint is set to LF and not CRLF
+    > Under windows you have to make sure that the file format from entrypoint is set to LF and not CRLF
 
 4. Check whether the server is running correctly:
 
