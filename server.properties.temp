@@ -1,0 +1,9 @@
+# Minecraft server properties
+server-port=25565
+motd=${MOTD}
+max-players=${MAX_PLAYERS}
+online-mode=true
+enable-command-block=false
+view-distance=10
+white-list=${WHITE_LIST}
+level-seed=${LEVEL_SEED}
