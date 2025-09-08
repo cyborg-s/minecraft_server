@@ -97,7 +97,7 @@ This section gives brief and minimal instructions on how to use the setup. more 
 * Create the `.env` file from the template and edit your own settings:
    
    ```bash 
-   cp exemple.env .env
+   cp example.env .env
    ``` 
 
    Edit your settings:
